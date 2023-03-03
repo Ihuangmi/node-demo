@@ -35,7 +35,7 @@ var data = "今天天气真好，就是穿厚了有点热";
 // });
 // console.log("程序执行完毕");
 
-// ##管道流
+// ##管道流 -- 大文件拷贝
 // 创建一个可读流
 var readerStream = fs.createReadStream("input.txt");
 
