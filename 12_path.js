@@ -1,5 +1,15 @@
 const path = require("path");
 
+// 路径变量
+// __dirname：获取文件夹路径
+console.log("__dirname:", __dirname); // D:\code\demos\node-test
+// __filename：获取文件路径
+console.log("__filename:", __filename); // D:\code\demos\node-test\15.js
+
+// 拼接路径
+const str = path.join(__dirname, "views", "view.html"); // 如果不希望自己手动处理 / 的问题，使用 path.join
+console.log(str); // D:\code\demos\node-test\views\view.html
+
 var cache = {};
 
 function store(key, value) {
